@@ -75,6 +75,7 @@ module HipChat
           :from    => from,
           :message => message,
           :color   => options[:color],
+          :message_format => options[:message_format] == 'text' ? 'text' : 'html',
           :notify  => options[:notify] ? 1 : 0
         }
       )
